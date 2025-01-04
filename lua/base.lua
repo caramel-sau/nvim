@@ -1,9 +1,11 @@
 -- # Documents
 -- https://neovim.io/doc/user/quickref.html
 
+vim.cmd('language en_US')
 vim.o.encoding = 'utf-8'
-vim.o.number = true
+vim.o.helplang = 'ja'
 
+vim.o.number = true
 vim.o.smartindent = true
 vim.o.clipboard = "unnamedplus"
 vim.o.list = true
@@ -20,7 +22,7 @@ vim.o.showmatch = true
 vim.o.visualbell = true
 vim.o.scrolloff = 8
 vim.o.cmdheight = 1
-vim.opt.showtabline = 2 -- タブラインを表示
+vim.opt.showtabline = 2
 vim.o.showcmd = true
 vim.opt.swapfile = false
 vim.opt.signcolumn = "yes"
