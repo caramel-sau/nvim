@@ -20,11 +20,11 @@ return {
       formatters_by_ft = {
         lua = { "stylua" },
         -- go = { "goimports", "gofmt" },
-        javascriptreact = { "prettierd" },
-        typescriptreact = { "prettierd" },
-        javascript = { "prettierd" },
-        typescript = { "prettierd" },
-        json = { "prettierd" },
+        javascriptreact = { "prettierd", "prettier" },
+        typescriptreact = { "prettierd", "prettier" },
+        javascript = { "prettierd", "prettier" },
+        typescript = { "prettierd", "prettier" },
+        json = { "prettierd", "prettier" },
         sql = {
           {
             cmd = { "sql-formatter" },
