@@ -1,11 +1,13 @@
 -- # Documents
 -- https://neovim.io/doc/user/quickref.html
 
-vim.cmd('language en_US')
+if not vim.g.vscode then
+vim.cmd('language en_US.UTF-8')
 vim.o.encoding = 'utf-8'
 vim.o.helplang = 'ja'
 
 vim.o.number = true
+vim.o.relativenumber = true
 vim.o.smartindent = true
 vim.o.clipboard = "unnamedplus"
 vim.o.list = true
@@ -27,6 +29,7 @@ vim.o.showcmd = true
 vim.opt.swapfile = false
 vim.opt.signcolumn = "yes"
 vim.cmd("highlight LineNr guifg=#8a70ac")
+end
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = "\\"

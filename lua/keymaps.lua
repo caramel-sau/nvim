@@ -17,9 +17,12 @@ map("n", "gx", ":tabclose<CR>", opts)
 map("n", "gt", ":tabnew<CR>", opts)
 map("n", "gn", "gt", opts)
 map("n", "gp", "gT", opts)
+map("n", "H", "0", opts)
+map("n", "L", "$", opts)
 
 -- Insert Mode
-map('i', 'jj', '<ESC>', opts)
+map('i', 'jk', '<ESC>', opts)
+map('s', 'jk', '<ESC>', opts)
 
 -- show diagnostics
 map('n', '<Leader>d', ':lua vim.diagnostic.open_float()<CR>', opts)

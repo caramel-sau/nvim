@@ -24,7 +24,12 @@ return {
         typescriptreact = { "prettierd", "prettier" },
         javascript = { "prettierd", "prettier" },
         typescript = { "prettierd", "prettier" },
+        python = { "prettierd" },
         json = { "prettierd", "prettier" },
+        html = { "prettierd", "prettier" },
+        css = { "prettierd", "prettier" },
+        scss = { "prettierd", "prettier" },
+        yaml = { "prettierd", "prettier" },
         sql = {
           {
             cmd = { "sql-formatter" },

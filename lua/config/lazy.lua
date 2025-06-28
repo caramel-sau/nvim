@@ -18,12 +18,25 @@ vim.opt.rtp:prepend(lazypath)
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
-    -- import your plugins
-    { import = "plugins" },
+    { import = "plugins.autopairs" },
+    { import = "plugins.conform" },
+    { import = "plugins.lualine" },
+    { import = "plugins.tree" },
+    { import = "plugins.avante" },
+    { import = "plugins.fzf" },
+    { import = "plugins.cmp" },
+    { import = "plugins.mason-lspconfig" },
+    { import = "plugins.treesitter" },
+    { import = "plugins.indent" },
+    { import = "plugins.theme" },
+    { import = "plugins.indent" },
+    { import = "plugins.diff" },
+    { 'vim-jp/vimdoc-ja' },
+    { 'github/copilot.vim', lazy = false },
   },
-  -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
   install = { colorscheme = { "habamax" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
+
