@@ -7,7 +7,6 @@ require('mason').setup({
     }
   }
 })
-
 require('mason-lspconfig').setup{
   ensure_installed = {
     "lua_ls",
@@ -22,6 +21,7 @@ require('mason-lspconfig').setup{
     "ts_ls",
     "marksman",
     "pylsp",
+    "intelephense",
   }
 }
 

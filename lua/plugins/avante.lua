@@ -6,7 +6,7 @@ return {
   opts = {
     provider = "copilot",
     auto_suggestions_provider = "copilot",
-    
+
     -- 動作設定
     behaviour = {
       auto_suggestions = false,
@@ -19,9 +19,9 @@ return {
 
     -- ウィンドウ設定
     windows = {
-      position = "right",  -- サイドバーの位置
-      wrap = true,        -- テキストの折り返し
-      width = 30,         -- サイドバーの幅
+      position = "right", -- サイドバーの位置
+      wrap = true, -- テキストの折り返し
+      width = 30, -- サイドバーの幅
       -- その他の詳細設定は省略
     },
   },
@@ -36,5 +36,5 @@ return {
     "nvim-tree/nvim-web-devicons",
     "zbirenbaum/copilot.lua",
     -- その他の拡張機能
-  }
+  },
 }
