@@ -9,6 +9,6 @@ return {
     { "<leader>e", "<cmd>NvimTreeToggle<CR>", desc = "TreeToggle" },
   },
   config = function()
-    require("nvim-tree").setup({})
+    require("nvim-tree").setup{}
   end,
 }

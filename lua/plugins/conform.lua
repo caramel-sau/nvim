@@ -25,7 +25,7 @@ return {
         css = { "prettierd", "prettier" },
         scss = { "prettierd", "prettier" },
         yaml = { "prettierd", "prettier" },
-        php = { "pint" },
+        php = { "php_cs_fixer" },
         ["_"] = { "trim_whitespace" },
       },
       default_format_opts = {
@@ -35,6 +35,13 @@ return {
         -- I recommend these options. See :help conform.format for details.
         lsp_format = "fallback",
         timeout_ms = 500,
+      },
+      formatters = {
+        php_cs_fixer = {
+          command = vim.fn.stdpath("data") .. "/mason/bin/php-cs-fixer",
+          args = { "fix", "$FILENAME" },
+          stdin = false,
+        },
       },
       notify_on_error = true,
       notify_no_formatters = true,
