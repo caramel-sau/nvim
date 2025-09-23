@@ -2,9 +2,8 @@ return {
   "mason-org/mason-lspconfig.nvim",
   event = "VeryLazy",
   opts = {},
-  version = "^1.0.0",
   dependencies = {
-    { "mason-org/mason.nvim", opts = {}, version = "^1.0.0" },
+    { "mason-org/mason.nvim", opts = {} },
     "neovim/nvim-lspconfig",
   },
 }
