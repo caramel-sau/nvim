@@ -22,6 +22,7 @@ require('mason-lspconfig').setup{
     "marksman",
     "pylsp",
     "intelephense",
+    "vuels",
   }
 }
 
@@ -56,6 +57,7 @@ require('mason-lspconfig').setup_handlers {
       map("n", "gr", vim.lsp.buf.references, opts "Show references")
     end
 
-    require('lspconfig')[server_name].setup(M)
+    vim.lsp.config(server_name, M)
+    vim.lsp.enable(server_name)
   end,
 }

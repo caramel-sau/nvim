@@ -1,5 +1,6 @@
 return {
   "mason-org/mason-lspconfig.nvim",
+  event = "VeryLazy",
   opts = {},
   version = "^1.0.0",
   dependencies = {

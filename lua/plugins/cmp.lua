@@ -41,14 +41,19 @@ return {
     -- Set up lspconfig.
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
     -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-    require("lspconfig").ts_ls.setup({
+    vim.lsp.config("ts_ls", {
       capabilities = capabilities,
     })
-    require("lspconfig").gopls.setup({
+    vim.lsp.config("gopls", {
       capabilities = capabilities,
     })
-    require("lspconfig").lua_ls.setup({
+    vim.lsp.config("lua_ls", {
       capabilities = capabilities,
     })
+    vim.lsp.config("vuels", {
+      capabilities = capabilities,
+      filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+    })
+    vim.lsp.enable({"ts_ls", "gopls", "lua_ls", "vuels"})
   end,
 }

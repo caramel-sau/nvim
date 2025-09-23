@@ -1,4 +1,4 @@
 return {
-  "sindrets/diffview.nvim",
+  "github/copilot.vim",
   event = "VeryLazy",
 }
