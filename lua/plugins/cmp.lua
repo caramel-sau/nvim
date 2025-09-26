@@ -37,23 +37,5 @@ return {
         { name = "buffer" }, -- バッファの内容を補完候補に含める
       }),
     })
-
-    -- Set up lspconfig.
-    local capabilities = require("cmp_nvim_lsp").default_capabilities()
-    -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-    vim.lsp.config("ts_ls", {
-      capabilities = capabilities,
-    })
-    vim.lsp.config("gopls", {
-      capabilities = capabilities,
-    })
-    vim.lsp.config("lua_ls", {
-      capabilities = capabilities,
-    })
-    vim.lsp.config("vuels", {
-      capabilities = capabilities,
-      filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
-    })
-    vim.lsp.enable({"ts_ls", "gopls", "lua_ls", "vuels"})
   end,
 }

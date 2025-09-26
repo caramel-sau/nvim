@@ -22,6 +22,7 @@ return {
         "sql",
         "yaml",
         "php",
+        "vue",
       },
       sync_install = false,
       highlight = { enable = true },
