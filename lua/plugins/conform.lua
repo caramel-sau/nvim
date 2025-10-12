@@ -25,6 +25,7 @@ return {
         css = { "prettierd", "prettier" },
         scss = { "prettierd", "prettier" },
         yaml = { "prettierd", "prettier" },
+        vue = { "prettierd", "prettier" },
         php = { "php_cs_fixer" },
         ["_"] = { "trim_whitespace" },
       },

@@ -12,7 +12,8 @@ local lsp_servers = {
   "marksman",
   "pylsp",
   "intelephense",
-  "vuels",
+  "vue_ls",
+  "emmet_language_server",
 }
 
 require("mason").setup({
@@ -25,10 +26,9 @@ require("mason").setup({
   },
 })
 
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
 require("mason-lspconfig").setup({
   ensure_installed = lsp_servers,
-  capabilities = capabilities,
+  capabilities = require("cmp_nvim_lsp").default_capabilities(),
 })
 
 vim.lsp.enable(lsp_servers)
